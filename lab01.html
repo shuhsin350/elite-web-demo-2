@@ -8,18 +8,40 @@
         <style type="text/css">
         body {background-color:#83c5be;background-image:url('pupu.jpg');
         background-repeat:no-repeat;background-position:center top; }
-        th{color:#006d77;border-style:dotted;background: #FF0;}
+        th{color:#006d77;border-style:dotted;background: #FF0;border-radius: 10px;}
         tr:nth-child(even) {background: #CCC;font-family:verdana}
         tr:nth-child(odd) {background: #FFF;font-family:verdana}
         td{border-style:dashed;}
         caption{color:#2b2d42;align:center;}
         table{width:50%;}
-        
+        #header {background-color:#ffd166;text-align: center;}
+        #menu {background-color:#8e9aaf;height:650px;width:10%;float:left;opacity:1;
+           }
+        #content {height:200px;width:75%;float:left;}
+        #footer {clear:both;text-align:center;}
+        p{margin-left:20px;}
         
 
         </style>
 </head>
 <body>
+  <div id="container" >
+  <!-- ▼以下DIV區是主圖banner區▼ -->
+  <div id="header" >
+    <h1 style="margin-bottom:0;">歡迎光臨逢岬大學網站</h1></div>
+    
+    <!-- ▼以下DIV區是選單區▼ -->
+<div id="menu" >
+<ul id="nav">
+<li><a href="#">收費標準</a></li>
+<li><a href="#">課程簡介</a></li>
+<li><a href="#">關於我們</a></li>
+</ul>
+  </div>
+
+  <div id="content">
+    
+    
     <table  border="1" align="center"  
     cellpadding="10">
     
@@ -86,6 +108,8 @@
 
         </tbody>
       </table>
-      
+      <div id="footer">
+        版權所有 © 逢岬大學</div>
+      </div>  
 </body>
 </html>
