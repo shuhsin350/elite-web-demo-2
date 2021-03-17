@@ -1,14 +1,28 @@
 body
 {
-    background-color:#d0e4fe;
+    background-color:#eae2b7;
 }
 th
 {
-    color:orange;
+    color:#d62828;
     text-align:center;
+    height:50px;
+    background-color: #003049;
 }
 td
 {
     font-family:"Times New Roman";
     font-size:20px;
+    height:50px;
+    text-align:center;
+    color:#003049;
 }
+
+table 
+{
+    width:70%;
+}
+
+td:nth-child(even) {background: #eae2b7}
+
+td:nth-child(odd) {background: #fcbf49}
