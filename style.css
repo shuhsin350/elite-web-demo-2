@@ -9,17 +9,28 @@ h1 {
     font-family:verdana;
 }
 p {
-    color:orange;
+    color:#003049;
     background-color: #cbc0d3;
     text-align:center;
     font-size:20px
     font-family: 'Chango', cursive;;
 }
 
-a {
-    text-align:center
-}
 
 ul { 
-    list-style:upper-roman; list-style-position:inside; 
+    list-style:upper-roman; 
+    list-style-position:inside;
+    text-align:center;
+    font-family:arial;color: palevioletred;
+    font-size:15px;
 }
+
+input {
+    background-color: #cbc0d3;color: #003049;align=center;
+}
+
+table {
+    border-top:3px #FFD382 solid;border-bottom:3px #82FFFF solid;" cellpadding="10" border='0';
+    line-height:40px;
+}
+
