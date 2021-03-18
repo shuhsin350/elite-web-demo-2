@@ -17,10 +17,10 @@ p {
 }
 
 
-ul { 
+table,th,tr,td { 
     list-style:upper-roman; 
     list-style-position:inside;
-    text-align:center;
+    
     font-family:arial;color: palevioletred;
     font-size:15px;
 }
@@ -29,8 +29,5 @@ input {
     background-color: #cbc0d3;color: #003049;align=center;
 }
 
-table {
-    border-top:3px #FFD382 solid;border-bottom:3px #82FFFF solid;" cellpadding="10" border='0';
-    line-height:40px;
-}
+a{text-align:center}
 
