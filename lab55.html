@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 01</title>
         <style type="text/css">
-        body {background-color:#83c5be;background-image:url('pupu.jpg');
-        background-repeat:no-repeat;background-position:center top; }
-        th{color:#006d77;border-style:dotted;background: #e9c46a;border-radius: 10px;}
+        body {background-color:#83c5be;
+              background-image:url('pupu.jpg');
+              background-repeat:no-repeat;
+              background-position:center top; }
+        th   {color:#006d77;border-style:dotted ;
+              background: #e9c46a;border-radius: 10px;
+              padding: 15px;}
         tr:nth-child(even) {background: #CCC;}
         tr:nth-child(odd) {background: #FFF;}
-        td{border-style:dashed;}
+        td   {border-style:dashed;
+              padding: 10px; }
         caption{color:#2b2d42;align:center;}
-        table{width:50%;font-family:  DFKai-SB, Geneva, Tahoma, sans-serif;}
+        table{font-family:DFKai-SB, Geneva, Tahoma, sans-serif; border-width:100px ;
+               
+              position:center top;}
         tr:hover {background-color: greenyellow;}
 
         #header {text-align: center;}
-        #menu {background-color:white;height:350px;width:150px;float:left;opacity:.85;
-           }
-        #content {height:200px;width:75%;float:left;}
+        #menu {background-color:white;height:350px;
+               width:150px; float:left; opacity:.85;}
+        .content {height:50px;width:100%;position:center top;}
         #footer {clear:both;text-align:center;}
-        p{margin-left:20px;}
-        
-
-        </style>
+       
+ 
+          </style>
 </head>
 <body>
   <div id="container" >
@@ -41,11 +47,9 @@
 </ul>
   </div>
 
-  <div id="content">
+  <div class="content">
     
-    
-    <table  border="1" align="center"  
-    cellpadding="10">
+    <table style="align="center">
     
         <caption>課表</caption>
       
