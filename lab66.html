@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 01</title>
+        <style type="text/css">
+        body {background-color:#83c5be;
+              background-image:url('pupu.jpg');
+              background-repeat:no-repeat;
+              background-position:center top; }
+              /* ---------------課表編輯區------------- */
+        th   {color:#006d77;border-style:dotted ;
+              background: #e9c46a;border-radius: 10px;
+              padding: 15px;}
+        tr:nth-child(even) {background: #CCC;}
+        tr:nth-child(odd) {background: #FFF;}
+        td   {border-style:dashed;
+            padding:10px; }
+        caption{color:#2b2d42;}
+        table{
+            font-family:DFKai-SB, Geneva, Tahoma, sans-serif; border-width:100px ;
+              }
+        tr:hover {background-color: greenyellow;}
+                /* ---------------課表編輯區------------- */
+        #header {
+            text-align: left;
+            }
+        #menu {
+            background-color:white;height:350px;
+            width:150px; float:left; opacity:.85;
+            display: flex;
+               }
+        .content {
+            height:;width:50%;
+            }
+        #footer {
+            display: flex;
+            clear:both;text-align:left;
+            justify-content:flex-start;
+            position: inherit;
+            }
+       
+ 
+          </style>
+</head>
+<body>
+  <div id="container" >
+  <!-- ▼以下DIV區是主圖banner區▼ -->
+  <div id="header" >
+    <h1 style="margin-bottom:0;">歡迎光臨逢岬大學網站</h1></div>
+    
+    <!-- ▼以下DIV區是選單區▼ -->
+<div id="menu" >
+<ul id="nav">
+<li><a href="#">收費標準</a></li>
+<li><a href="#">課程簡介</a></li>
+<li><a href="#">關於我們</a></li>
+</ul>
+  </div>
+    <!-- ▼以下DIV區是內容區▼ -->
+  <div class="content">
+    
+    <table>
+    
+        <caption>課表</caption>
+      
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>星期一</th>
+            <th>星期二</th>
+            <th>星期三</th>
+            <th>星期四</th>
+            <th>星期五</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+        </tr>
+            <tr>
+            <td>10:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          
+          <tr>
+            <td>11:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          <tr>
+            <td>12:10</td>
+
+            <td colspan="5">Lunch Time</td>
+            
+          </tr>
+          <tr>
+            <td>13:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          <tr>
+            <td>14:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <div id="footer">
+        </div>
+      </div>  
+</body>
+</html>
