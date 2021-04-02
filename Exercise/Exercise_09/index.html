@@ -35,10 +35,10 @@
         .box6-1 {grid-area: 3/5/span 8/span 1;
             grid-template-columns: auto  ;
             grid-template-rows: repeat(8,1fr);  }
-        .box6-2 {grid-area: 3/6/span 8/span 1;
+        .box6-2 {grid-area: 3/6/span 9/span 1;
             grid-template-columns: auto  ;
-            grid-template-rows: repeat(8,1fr);  }
-        .box5-1 {grid-area: 7/2/auto/span 1;
+            grid-template-rows: repeat(8,auto);  }
+        .box5-1 {grid-area: 7/2/span 4/span 1;
             grid-template-columns: auto  ;
             grid-template-rows: repeat(8,1fr);  }
         .box5-2 {grid-area: 7/3/span 4/span 1;
@@ -83,10 +83,13 @@
         .box1,.box2,.box3 {
             text-align: center;
             font-size: 20px;
-            font-weight: bold;}
+            font-weight: bold;
+            
+            }
         .box4,.box5,.box6,.box7,.box8,.box9,.box10 {
             text-align: center;
             font-size: 20px;
+            
         }
         .box11,.box12 {
             text-align: left;
@@ -110,14 +113,48 @@
         .box9, .box10 {background-color: #95f0e5;}
         
         /* 框線 */
-        .box6-1 {
-            justify-content: space-evenly;
-            align-content: space-around;
+        .box6-1 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
+            width: -moz-fit-content;
+            block-size: fit-content;
+            height: 73px;
+        }
+        .box6-2 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
         }
         .box2,.box3 {
             border: 2px black solid;
         }
-
+        .box4-1 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
+            width: -moz-fit-content;
+            height: 73px;
+        }
+        .box4-2 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
+            width: -moz-fit-content;
+            height: 73px;
+        }
+        .box5-1 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
+        }
+        .box5-2 > div {
+            text-align: center;
+            padding: 13px 0;
+            font-size: 30px;
+            width: -moz-fit-content;
+            height: 73px;
+        }
     </style>
 </head>
 <body>
@@ -181,7 +218,7 @@
         </div>
 
         <div class="box5-2">
-            <div></div>
+            <div> </div>
             <div></div>
             <div>1,361,096</div>
             <div></div>
