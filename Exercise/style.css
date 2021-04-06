@@ -1,9 +1,7 @@
 body
 {
     background-color:#eae2b7;
-    background-image:url("https://flim-1-0-2.s3.eu-central-1.amazonaws.com/full/9059f056042411ebb38910ddb1aba44f.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+    background:url("https://flim-1-0-2.s3.eu-central-1.amazonaws.com/full/9059f056042411ebb38910ddb1aba44f.png") no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
 
@@ -26,15 +24,15 @@ td
     color:#003049;
     font-weight:bold;
     padding:10px 10px;
+    border-radius: 10px;
 }
 
+content{
+    padding: 30px 0px; 
+}
 table 
 {
     border: 1px dotted black
-    width:50%;
-    margin-left:auto; 
-    margin-right:auto;
-    opacity: .85;
 }
 td:nth-child(even)
  {background: #ddb892}
