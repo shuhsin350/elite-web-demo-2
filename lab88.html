@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Lab 06</title>
+        <style type="text/css">
+        body {background-color:#FFF;
+              background-image:url("https://images.pexels.com/photos/2187459/pexels-photo-2187459.jpeg?cs=srgb&dl=pexels-evgeny-tchebotarev-2187459.jpg&fm=jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-position: center;
+              background-size: auto 100%; 
+              
+              }
+        #header > h1 {text-align: center;
+               margin-top: 10px;
+               margin-bottom: 30px;
+               text-shadow: #6978a7 8px 1px 20px;
+            }
+              /* ---------------課表編輯區------------- */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            }
+        th   {color:#003e77; ;
+              background: #e9c46a;
+              padding: 15px;}
+        tr:nth-child(even) {background: #CCC;}
+        tr:nth-child(odd) {background: #FFF;}
+        td   {
+            padding:10px; }
+        caption{color:#2b2d42;}
+        table{
+            font-family:DFKai-SB, Geneva, Tahoma, sans-serif; border-width:100px ;
+              }
+        tr:hover {background-color: #8da2e0;}
+                /* ---------------課表編輯區------------- */
+        #menu {
+            background-color:white;
+            height:350px;
+            width:150px; float:left; opacity:.85; padding: 10px;
+            display: flex;
+
+               }
+        #footer {
+            width: 100px;
+            height: 100px;
+            color: #FFF;
+            background-color: black;
+            position: fixed;
+            top: 100px;
+            left: 30px;
+         
+            }
+       
+ 
+          </style>
+</head>
+<body>
+  <div class="container" >
+    
+  <!-- ▼以下DIV區是主圖banner區▼ -->
+  <div id="header" >
+    <h1>  逢岬大學學生課表</h1>
+  </div>
+    <!-- ▼以下DIV區是選單區▼ -->
+  <div id="menu" >
+    <ol class="fa-ul">
+      <li><span class="fa-li"><a href="#">
+        <i class="fas fa-tag"></i>
+      </a></span>收費標準</li>
+      <li><span class="fa-li"><a href="#">
+        <i class="fas fa-user-friends"></i>
+      </a></span>課程簡介</li>
+      <li><span class="fa-li"><a href="#">
+        <i class="fas fa-user-tie"></i>
+      </a></span>關於我們</li>
+    </ol>
+  </div>
+    <!-- ▼以下DIV區是內容區▼ -->
+  <div class="content">
+    <div class="d-flex justify-content-around">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">時間</th>
+            <th scope="col">星期一</th>
+            <th scope="col">星期二</th>
+            <th scope="col">星期三</th>
+            <th scope="col">星期四</th>
+            <th scope="col">星期五</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          <tr>
+            <td>10:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          
+          <tr>
+            <td>11:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          <tr>
+            <td>12:10</td>
+            <td colspan="5">Lunch Time</td>
+          </tr>
+          <tr>
+            <td>13:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+          <tr>
+            <td>14:10</td>
+            <td>python課</td>
+            <td>web課</td>
+            <td>python課</td>
+            <td>網頁專題</td>
+            <td>web課</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div id="footer">
+      聯絡專線：04-12345678 學員招募部 許小姐  
+  </div>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
