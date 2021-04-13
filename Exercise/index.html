@@ -5,49 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 紀錄表</title>
-    <link href="style.css" rel="stylesheet">
+    
+    <style>
+        body
+        {
+            background-color:#eae2b7;
+            background:url("./image/BGI_女_小.jpg") no-repeat center center;
+            background-attachment: fixed;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: repeat(4 auto);
+            grid-template-rows: repeat(3 auto);
+
+        }
+        .header {
+            display: grid;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        h1, p
+        {
+            text-align: left;
+            color:#fff;
+        }
+        p {
+            margin-top: -10px; ;
+        }
+        h1 {
+            text-shadow: 8px 5px 10px #000;
+        }
+        content{
+            padding: 30px 0px; 
+            width: 600px;
+            height: auto;
+            display: grid;
+            grid-column: 3/4;
+            grid-row:2/3 ;
+        }
+        table {   
+            border-collapse: collapse;
+        }
+        th
+        {
+            color:#ede0d4;
+            text-align:center;
+            font-size: 15px;
+            height:30px;
+            background-color: #9c6644;
+        }
+        th:nth-child(1) {
+            border-radius: 30px 0 0 0;
+
+        }
+        th:nth-child(3) {
+            border-radius:  0 30px 0 0  ;
+
+        }
+        td
+        {
+            font-family:"Times New Roman";
+            font-size:10px;
+            height:30px;
+            text-align:left;
+            color:#003049;
+            font-weight:bold;
+            padding:10px 10px;
+            border-bottom: 1px solid #000;
+        }
+        td:nth-child(even)
+        {background: #ddb892}
+
+        td:nth-child(odd) 
+        {background: #b08968}
+        a {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        
+    </style>
 </head>
 <body>
-   <h2 style="text-align: center;">書欣 的 練習紀錄表 </h2> 
-   <p>Judy's Exercise Sheet</p>
+    <div class="header">
+        <h1 >書欣 的 練習紀錄表 </h1> 
+        <p>Judy's Exercise Sheet</p>
+    </div>
+    <content>
+        <table>
 
-<content>
-   <table >
+            <tr>
+                <th>Exercise</th>
+                <th>description</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Exercise_01 基本網頁修改</td>
+                <td>將文章段落加入CSS，包含粗體、底色和斜體</td>
+                <td><a href="Exercise_01/index.html">Exercise_01</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_02 加入超連結 </td>
+                <td>將文章段落加入超連結</td>
+                <td><a href="Exercise_02/index.html">Exercise_02</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_03 頁面互連</td>
+                <td>將網頁加入連結，使其連結往其他網頁</td>
+                <td><a href="Exercise_03/index.html">Exercise_03</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_04 清單概念</td>
+                <td>撰寫一個包含清單概念的網頁</td>
+                <td><a href="Exercise_04/index.html">Exercise_04</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_05 網誌雛形</td>
+                <td></td>
+                <td><a href="Exercise_05/index.html">Exercise_05</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_06 </td>
+                <td></td>
+                <td><a href="Exercise_06/index.html">Exercise_06</a></td>
+            </tr>
+            <tr>   
+                <td>Exercise_07 </td>
+                <td></td>
+                <td><a href="Exercise_07/index.html">Exercise_07</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_08 </td>
+                <td></td>
+                <td><a href="Exercise_08/index.html">Exercise_08</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_09 </td>
+                <td></td>
+                <td><a href="Exercise_09/index.html">Exercise_09</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_10 </td>
+                <td></td>
+                <td><a href="Exercise10/index.html">Exercise_10</a></td>
+            </tr>
+            <tr>
+                <td>Exercise_11 網頁切版 - Flex</td>
+                <td></td>
+                <td><a href="Exercise_11/index.html">Exercise_11</a></td>
+            </tr>
+            <tr>   
+                <td>Exercise_12 網頁切版 - Grid</td>
+                <td></td>
+                <td><a href="Exercise_12/index.html">Exercise_12</a></td>
+            </tr>
 
-    <tr>
-        <th>Exercise</th>
-        <th>描述</th>
-        <th>超連結</th>
-    </tr>
-    <tr>
-        <td>Exercise_01 基本網頁修改</td>
-        <td>將文章段落加入CSS，包含粗體、底色和斜體</td>
-        <td><a href="Exercise_01/index.html">Exercise_01</a></td>
-    </tr>
-    <tr>
-        <td>Exercise_02 加入超連結 </td>
-        <td>將文章段落加入超連結</td>
-        <td><a href="Exercise_02/index.html">Exercise_02</a></td>
-    </tr>
-    <tr>
-        <td>Exercise_03 頁面互連</td>
-        <td>將網頁加入連結，使其連結往其他網頁</td>
-        <td><a href="Exercise_03/index.html">Exercise_03</a></td>
-    </tr>
-    <tr>
-        <td>Exercise_04 清單概念</td>
-        <td>撰寫一個包含清單概念的網頁</td>
-        <td><a href="Exercise_04/index.html">Exercise_04</a></td>
-    </tr>
-    <tr>
-        <td>Exercise_05 網誌雛形</td>
-        <td>包含文章列表頁面與至少一個檢視單一文章頁面，須使用「語意化標籤」，
-            使用 style 屬性美化頁面
-            </td>
-        <td><a href="Exercise_05/index.html">Exercise_05</a></td>
+        </table> 
+    </content>
 
-    </tr>
-</content>
-</table>
 </body>
 </html>
