@@ -8,11 +8,16 @@
     <title>Exercise_11</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Hachi+Maru+Pop&display=swap');
+        @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('/jf-openhuninn-1.1.woff') format('woff');
+            }
     body {
             display: grid;
             height: 100vh;
             grid-template: auto 1fr auto / auto 1fr auto;
             margin: 0;
+            font-family:'jf-openhuninn-1.1';
     }
         /* LOGO Cart Product */
     header {
@@ -25,10 +30,9 @@
             align-items: center;
         }
         .title {
-            color: white;
+            color: #000;
             padding-left: 30px;
             font-size: 45px;
-            font-weight: bold;
             font-style: italic;
             margin: 0;
             font-family:'Bungee Inline', cursive;
@@ -70,8 +74,14 @@
             padding: 0;
             background-color: navajowhite;
             margin: 0;
+            font-family:'jf-openhuninn-1.1';
         }
-
+        .category :hover {
+            background-color: #fff;
+        }
+        .category5 a {
+            color: orangered;
+        }
         .category5-1 {
             border: black 1px dashed;
             border-collapse: collapse;
