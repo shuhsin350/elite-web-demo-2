@@ -7,135 +7,236 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>Exercise_11</title>
     <style>
-      /* header */
-        #header {
-          background-color: #orange;
-        
+         body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            margin: 0;
         }
-        .container{
-          width: 700px;
-          height: 90px;
-          margin: 0 auto;
-          background: #df783d;
+        
+        header,
+        footer {
+            flex: 1;
+        }
+        
+        .body {
+            display: flex;
+            flex: 1;
+            flex-direction: row-reverse;
+        }
+        
+        .content {
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        
+        .nav,
+        .ads {
+            flex: 0 0 20em;
+        }
+        
+        .nav {
+            order: -1;
+        }
+        
+        header {
+            background-color: #ff7f50;
+            max-height: 60px;
+        }
+        
+        header > h1 {
+          margin: 10px 30px 10px 30px;
+        }
+        .title {
+            color: white;
+            padding-left: 30px;
+            font-size: 14pt;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+        }
+        
+        aside {
+            max-width: 600px;
+            padding-top: 4px;
+        }
+        .cart {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            font-size: 14pt;
+            text-decoration: none;
+            padding-left: 20px;
+        }
+        .cart a {
+          color: #000;
+        }
+        
+        
+        .category5 {
+            padding: 10px;
+            color: inherit;
+            font-size: 12pt;
+            text-decoration: none;
+            text-align: center;
+            list-style: none;
+            border-style: dashed;
+            border-width: 1px;
+            border-collapse: collapse;
+            background-color: navajowhite;
+        }
+        
+        .category5-1 {
+            padding: 10px;
+            color: inherit;
+            font-size: 12pt;
+            text-decoration: none;
+            text-align: center;
+            list-style: none;
+            border-style: solid;
+            border-width: 1px;
+            background-color: navajowhite;
+        }
+        
+        .aside-category {
+            max-width: 150px;
+            position: absolute;
+            left: 200px;
+        }
+        
+        .ads {
+            background-color: white;
+        }
+        
+   
+        .card {
+            border-color: gray;
+            border-width: 1px;
+            border-style: solid;
+            background-color: white;
+            max-width: 160px;
+            margin: 10px;
+            padding: 0;
+            max-height: 250px;
+        }
+        
+        .name {
+            text-align: left;
+            font-size: 12pt;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        
+        .sale-price {
+            font-size: 14pt;
+            text-align: right;
+            margin: 10px;
+        }
+        
+        .add {
+            text-align: right;
+            font-size: 10pt;
+            padding-right: 10px;
         }
 
-        h1{
-          float: left;
-          padding: 10px 20px;
+        footer {
+            background-color: #808080;
+            font-size: 10pt;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+            text-align: center;
+            max-height: 30px;
         }
-        nav{
-          float: right;
-          padding: 24px 60px;
-        }
-        ul{
-          margin: 0;
-          list-style-type: none;
-        }
-        nav li{
-          padding: 10px ;
-          float: left;
-        }
-        /* 滑鼠浮動特效 */
-        nav li:hover{ 
-          background-color: #7A918D;
-          opacity: 0.5; }   
-        nav a{
-          padding: 0 10px;
-          counter-reset: #fff;
-        }
-        /* 菜單 */
-        #content {
-          max-width: 992px;
-          margin: 50px auto;
-          display: grid;
-          grid-template-columns: repeat (3, 18rem );
-          grid-gap: 50px 50px;
-        }
-        .menu1 {
-          grid-column: 1/2;
-        }
-        .menu2 {
-          grid-column: 1/2;
-        }
-        .menu3 {
-          grid-column: 1/2;
-        }
+        
     </style>
 </head>
-<body>
-  <div id="header">
-    <!--容器分為左圖右導覽連結 -->
-    <div class="container">
-      <h1>My shop</h1>
-      <!--導覽列 -->
-      <nav>
-        <ul>
-          <li>
-            <a href="#">商品</a>
-          </li>
-          <li>
-            <a href="#">購物車</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div id="content">
-        <div class="menu1">
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/ZMpETy0b.gif" class="card-img-top" alt="蛋糕">
-                <div class="card-body">
-                  <h5 class="card-title">蛋糕</h5>
-                  <p class="card-text">NT$150</p>
-                  <a href="#" class="btn btn-primary">加入購物車</a>
-                </div>
-              </div>
-        </div>
-      </div>     
-        <div class="menu2">
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/ODZ7Zpzb.jpg" class="card-img-top" alt="蛋糕">
-                <div class="card-body">
-                  <h5 class="card-title">滿滿的點心</h5>
-                  <p class="card-text">NT$300</p>
-                  <a href="#" class="btn btn-primary">加入購物車</a>
-                </div>
-              </div>
-        </div>
-        <div class="menu3">
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/qT3MWAbb.gif" class="card-img-top" alt="蛋糕">
-                <div class="card-body">
-                  <h5 class="card-title">紅色的</h5>
-                  <p class="card-text">NT$666</p>
-                  <a href="#" class="btn btn-primary">加入購物車</a>
-                </div>
-              </div>
-        </div>
-        <div class="menu4">
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/2G16qPab.gif" class="card-img-top" alt="蛋糕">
-                <div class="card-body">
-                  <h5 class="card-title">蛋糕</h5>
-                  <p class="card-text">NT$85</p>
-                  <a href="#" class="btn btn-primary">加入購物車</a>
-                </div>
-              </div>
-        </div>
-        <div class="menu5">
-            <div class="card" style="width: 18rem;">
-                <img src="https://i.imgur.com/fziT4jzb.gif" class="card-img-top" alt="蛋糕">
-                <div class="card-body">
-                  <h5 class="card-title">魔術方塊?</h5>
-                  <p class="card-text">NT$999</p>
-                  <a href="#" class="btn btn-primary">加入購物車</a>
-                </div>
-              </div>
-        </div>
-    <footer>
 
+<body>
+
+    <header>
+        <h1 class="title">MyShop</h1>
+        <div class="cart">
+            <a href="#">商品</a> <a href="#">購物車</a>
+        </div>
+    </header>
+
+    <div class="body">
+        <div class="nav"></div>
+
+        <main class="content">
+            <div class="card">
+                <img src="https://i.imgur.com/ZMpETy0b.gif">
+                <div class="prduct-info">
+                    <div class="name">蛋糕</div>
+                    <div class="add">加入購物車</div>
+                    <div class="sale-price">NT$ 150</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/ODZ7Zpzb.jpg">
+                <div class="prduct-info">
+                    <div class="name">滿滿的點心</div>
+                    <div class="add">加入購物車</div>
+                    <div class="sale-price">NT$ 300</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/qT3MWAbb.jpg">
+                <div class="prduct-info">
+                    <div class="name">紅色的</div>
+                    <div class="add">加入購物車</div>
+                    <div class="sale-price">NT$ 666</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/2G16qPab.jpg">
+                <div class="prduct-info">
+                    <div class="name">蛋糕</div>
+                    <div class="add">加入購物車</div>
+                    <div class="sale-price">NT$ 85</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://i.imgur.com/fziT4jzb.gif">
+                <div class="prduct-info">
+                    <div class="name">魔術方塊？</div>
+                    <div class="add">加入購物車</div>
+                    <div class="sale-price">NT$ 999</div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="ads">
+            <div class="aside-category">
+                <ul class="category">
+                    <li class="category5-1"><a data-text-content="twitter" href="#" target="_blank">商品分類</a></li>
+                    <li class="category5"><a data-text-content="twitter" href="#" target="_blank">所有商品</a></li>
+                    <li class="category5"><a data-text-content="twitter" href="#" target="_blank">暢銷商品</a></li>
+                    <li class="category5"><a data-text-content="twitter" href="#" target="_blank">本日精選</a></li>
+                    <li class="category5"><a data-text-content="twitter" href="#" target="_blank">新品上市</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>©2021 MyShop All rights reserved.</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-</body>
+  </body>
+
 </html>
