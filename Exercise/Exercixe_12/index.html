@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Exercise_11</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Hachi+Maru+Pop&display=swap');
+    body {
+            display: grid;
+            height: 100vh;
+            grid-template: auto 1fr auto / auto 1fr auto;
+            margin: 0;
+    }
+        /* LOGO Cart Product */
+    header {
+            background: #ff7f50;
+            padding: 0;
+            grid-column: 1 / 4;
+            color: white;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+        .title {
+            color: white;
+            padding-left: 30px;
+            font-size: 45px;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+            font-family:'Bungee Inline', cursive;
+            letter-spacing: 10px;
+        }
+        .cart {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            font-size: 30px;
+        }
+        .cart a {
+            color: aliceblue;
+
+        }
+
+        /* 左側邊攔菜單 */
+        .left-sidebar {
+            padding: 1rem;
+            width: 340px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .right-sidebar {
+            padding: 1rem;
+            width: 340px;
+        }
+
+        .aside-category {
+            width: 100px;
+        }
+
+        .category {
+            color: inherit;
+            font-size: 12pt;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+            background-color: navajowhite;
+            margin: 0;
+        }
+
+        .category5-1 {
+            border: black 1px dashed;
+            border-collapse: collapse;
+            padding: 15px;
+            font-weight: bold;
+            text-decoration: dashed;
+        }
+
+        .category5 {
+            padding: 10px;
+            border-collapse: collapse;
+            border-bottom: 1px dashed black;
+            border-right: 1px dashed black;
+            border-left: 1px dashed black;
+        }
+
+        main {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(3, 300px);
+            padding: 15px;
+        }
+
+        .visual {
+            height: auto;
+            width: 205px;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: white;
+            border: 1px gray solid;
+            padding: 0;
+            height: auto;
+            width: 200px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 14px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .price {
+            font-size: 24px;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 10px;
+            font-family: 'Hachi Maru Pop', cursive;
+        }
+
+        .add-to-cart-button {
+            display: flex;
+            flex-direction: row-reverse;
+            padding-right: 10px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <p class="title">My Shop</p>
+        <div class="cart">
+            <a href="#">商品</a> <a href="#">購物車</a>
+        </div>
+    </header>
+
+    <div class="left-sidebar">
+        <div class="aside-category">
+            <ul class="category">
+                <li class="category5-1"><a  href="#" target="_blank">商品分類</a></li>
+                <li class="category5"><a  href="#" target="_blank">所有商品</a></li>
+                <li class="category5"><a  href="#" target="_blank">暢銷商品</a></li>
+                <li class="category5"><a  href="#" target="_blank">本日精選</a></li>
+                <li class="category5"><a  href="#" target="_blank">新品上市</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="card">
+            <div class="visual"><img src="https://i.imgur.com/ZMpETy0b.gif"></div>
+            <h1>蛋糕</h1>
+            <div class="add-to-cart-button"><input type="button" value="加入購物車" name="add-to-cart"
+                    style="width:80px;height:30px;"></div>
+            <p class="price">NT$ 150</p>
+
+        </div>
+        <div class="card">
+            <div class="visual"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"></div>
+            <h1>滿滿的點心</h1>
+            <div class="add-to-cart-button"><input type="button" value="加入購物車" name="add-to-cart"
+                    style="width:80px;height:30px;"></div>
+            <p class="price">NT$ 300</p>
+
+        </div>
+        <div class="card">
+            <div class="visual"><img src="https://i.imgur.com/qT3MWAbb.jpg"></div>
+            <h1>紅色的</h1>
+            <div class="add-to-cart-button"><input type="button" value="加入購物車" name="add-to-cart"
+                    style="width:80px;height:30px;"></div>
+            <p class="price">NT$ 666</p>
+        </div>
+
+        <div class="card">
+            <div class="visual"><img src="https://i.imgur.com/2G16qPab.jpg"></div>
+            <h1>蛋糕</h1>
+            <div class="add-to-cart-button"><input type="button" value="加入購物車" name="add-to-cart"
+                    style="width:80px;height:30px;"></div>
+            <p class="price">NT$ 85</p>
+        </div>
+
+        <div class="card">
+            <div class="visual"><img src="https://i.imgur.com/fziT4jzb.gif"></div>
+            <h1>魔術方塊？</h1>
+            <div class="add-to-cart-button"><input type="button" value="加入購物車" name="add-to-cart"
+                    style="width:80px;height:30px;"></div>
+            <p class="price">NT$ 999</p>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
