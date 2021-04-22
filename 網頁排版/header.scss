@@ -1,0 +1,14 @@
+html, body {
+    font-family: serif;
+    word-wrap: break-word;
+    word-break: normal;
+    margin: 0;
+    padding: 0;
+}
+.container_24.type04_header {
+    margin: 0 auto;
+}
+a {
+    outline: none;
+    behavior: expression(this.onFocus=this.blur());
+}
